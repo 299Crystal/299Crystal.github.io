@@ -16,19 +16,19 @@
   <meta name="author" content="我是不白学">
   <meta name="keywords" content="">
   
-    <meta name="description" content="hexo 博客图片不显示解决方案方法： 博客文件夹下 找到_config.yml。 将文件中的post_asset_folder设为true。 下一次hexo n “文章标题”时会同时生成一个名为“hexo-文章标题”的文件夹，将所需图片放入其中，使用时采用如下格式引用。  测试：">
+    <meta name="description" content="hexo 博客图片不显示解决方案方法： 要添加图片，在博客根目录，先npm install 一个hexo-asset-image的依赖1npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save 博客文件夹下 找到_config.yml。 将文件中的post_asset_folder设为true。 下一次hexo n “文章">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客图片不显示解决方案">
 <meta property="og:url" content="http://example.com/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="我是不白学的notebook">
-<meta property="og:description" content="hexo 博客图片不显示解决方案方法： 博客文件夹下 找到_config.yml。 将文件中的post_asset_folder设为true。 下一次hexo n “文章标题”时会同时生成一个名为“hexo-文章标题”的文件夹，将所需图片放入其中，使用时采用如下格式引用。  测试：">
+<meta property="og:description" content="hexo 博客图片不显示解决方案方法： 要添加图片，在博客根目录，先npm install 一个hexo-asset-image的依赖1npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save 博客文件夹下 找到_config.yml。 将文件中的post_asset_folder设为true。 下一次hexo n “文章">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/1.png">
+<meta property="og:image" content="http://example.com/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/1.png">
 <meta property="article:published_time" content="2022-11-25T12:23:21.000Z">
-<meta property="article:modified_time" content="2022-12-29T06:58:08.234Z">
+<meta property="article:modified_time" content="2022-12-30T13:08:19.661Z">
 <meta property="article:author" content="我是不白学">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/1.png">
+<meta name="twitter:image" content="http://example.com/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/1.png">
   
   
   
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          132 字
+          376 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          2 分钟
+          4 分钟
         
       </span>
     
@@ -275,12 +275,15 @@
               <div class="markdown-body">
                 
                 <h2 id="hexo-博客图片不显示解决方案"><a href="#hexo-博客图片不显示解决方案" class="headerlink" title="hexo 博客图片不显示解决方案"></a>hexo 博客图片不显示解决方案</h2><h4 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h4><ol>
+<li>要添加图片，在博客根目录，先npm install 一个hexo-asset-image的依赖<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs git">npm install https://github.com/CodeFalling/hexo-asset-image --save<br></code></pre></td></tr></table></figure></li>
 <li>博客文件夹下 找到_config.yml。</li>
 <li>将文件中的post_asset_folder设为true。</li>
-<li>下一次hexo n “文章标题”时会同时生成一个名为“hexo-文章标题”的文件夹，将所需图片放入其中，<br>使用时采用如下格式引用。</li>
+<li>下一次hexo n “文章标题”时会同时生成一个名为“hexo-文章标题”的文件夹，将所需图片放入其中，引用图片时使用时采用如下格式引用。</li>
 </ol>
-<h4 id="测试："><a href="#测试：" class="headerlink" title="测试："></a>测试：</h4><img src="/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/1.png" srcset="/img/loading.gif" lazyload class title="引用格式">
-
+<h4 id="测试："><a href="#测试：" class="headerlink" title="测试："></a>测试：</h4><p><img src="/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/1.png" srcset="/img/loading.gif" lazyload alt="测试"></p>
+<blockquote>
+<p>上述图片所使用的代码如下所示<br>   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">测试</span>](<span class="hljs-link">./%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/1.png</span>)<br><br></code></pre></td></tr></table></figure></p>
+</blockquote>
 
                 
               </div>
